@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="music_div">
+        <div class="heading">
+          <h2></h2>
+          <h3></h3>
+        </div>
+        <div class="music_img">
+          <img src="images/image-1.png" alt="image" />
+        </div>
+        <div class="progress_container">
+          <div class="time_container">
+            <div id="current_time">0.00</div>
+            <div id="time_duration">12.00</div>
+          </div>
+          <div class="progress_bar">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <div class="music_controls">
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-play" id="play"></i>
+          <i class="fas fa-forward"></i>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

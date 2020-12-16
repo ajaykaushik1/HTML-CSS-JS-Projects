@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(206, 68, 68);
+}
+.lightning_button {
+  text-decoration: none;
+  color: #000;
+  font-size: 4rem;
+  background: rgb(15, 180, 144);
+  padding: 2rem;
+  border: black;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.lightning_button:hover {
+  background-color: blueviolet;
+  color: white;
+}
+.lightning_button::before {
+  content: "";
+  width: 70%;
+  height: 25%;
+  position: absolute;
+  background: white;
+  transition: all 0.5s linear;
+  transform: rotate(45deg);
+  left: -100%;
+}
+.lightning_button:hover::before {
+  left: 100%;
+}
